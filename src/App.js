@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import Component from './components/RentOperations.js';
+import Component from './helpers/RentOperations.js';
+import Header from "./components/Header/Header";
 
 function App() {
   const [days, setDays] = useState(0);
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div>
+      <Header/>
       <select onChange={selectHotelCar}>
         <option value="Hotel">Hotel</option>
         <option value="Car">Car</option>
