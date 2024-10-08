@@ -1,7 +1,7 @@
-// Header.js
 import React from 'react';
 import './Header.css';
-import NavBar from "../NavBar/NavBar"; // CSS for header component
+import NavBar from "../NavBar/NavBar";
+import TypeRent from '../TypeRent/TypeRent';
 
 const Header = () => {
     return (
@@ -11,6 +11,7 @@ const Header = () => {
                 <h1>Welcome to Our Website</h1>
                 <p>Your success starts here</p>
             </div>
+            <TypeRent />
         </header>
     );
 };
